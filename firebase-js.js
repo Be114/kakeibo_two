@@ -2,14 +2,15 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
-// 実際の Firebase プロジェクトの設定で置き換えてください
+// Firebase プロジェクトの設定
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBmGUhnlDf1XkxamAEVVBzOkgYNcsDdkaE",
+  authDomain: "kakeibo-two.firebaseapp.com",
+  projectId: "kakeibo-two",
+  storageBucket: "kakeibo-two.firebasestorage.app",
+  messagingSenderId: "121189042664",
+  appId: "1:121189042664:web:80a60f72735b70d614bc5d",
+  measurementId: "G-XD1SDMQ7ZN"
 };
 
 // Firebase の初期化
