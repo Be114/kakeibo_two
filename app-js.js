@@ -50,7 +50,7 @@ function App() {
   // Firebase からデータを読み込む
   useEffect(() => {
     // Firebase があるとコメントアウトを解除してください
-    /*
+  
     const fetchData = async () => {
       try {
         // 固定費/変動費データ取得
@@ -103,7 +103,7 @@ function App() {
     };
     
     fetchData();
-    */
+    
 
     // Firebase の代わりに初期データをロード（開発用）
     const loadInitialData = () => {
@@ -179,7 +179,7 @@ function App() {
   const addExpense = async (expenseData) => {
     try {
       // Firebase があるとコメントアウトを解除してください
-      /*
+      
       if (expenseData.date) {
         // 日別支出データに追加
         const dailyExpenseRef = doc(collection(db, 'dailyExpenses'));
@@ -216,7 +216,7 @@ function App() {
           [expenseData.id]: expenseDoc
         }));
       }
-      */
+      
       
       // Firebase がない場合のローカル処理
       // 日別支出データに追加
@@ -260,10 +260,10 @@ function App() {
   const updateExpense = async (id, amount) => {
     try {
       // Firebase があるとコメントアウトを解除してください
-      /*
+      
       const expenseRef = doc(db, 'expenses', id);
       await updateDoc(expenseRef, { amount });
-      */
+      
       
       // ローカルデータを更新
       setExpenses(prev => ({
